@@ -1,0 +1,14 @@
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+# Sample text
+text = "Python is great for data science. Python is also great for machine learning."
+
+# Generate the word cloud
+wordcloud = WordCloud(width=800, height=400, background_color='green').generate(text)
+
+# Display the word cloud
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()
